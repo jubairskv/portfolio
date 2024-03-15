@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jubair</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" />
+
+<script src="https://kit.fontawesome.com/193ace32a1.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo-head"><span class="logo">J</span>ubair.K</h1>
+                <ul id="sidemenu">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#skills">Skills</a></li>
+                    <li> <a href="#project">Projects</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Junior Frontend Developer</p>
+                <h1>Hi, I'm <span>Jubair</span> <br>Web Developer</h1>
+                <p class="mt-4">Let's create something for the world!</p>
+                <a href="images/Jubair K.pdf" download class="resume-btn">Resume</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="img" src="images/jubair2.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p style="margin-top: 20px; line-height: 1.5;">Hello, my name is Jubair K. I am a <strong style="color: #ffffff; font-weight: bold;">Junior frontend developer</strong> with <strong style="color: #ffffff; font-weight: bold;">1+ years of industrial experience</strong>. I have a solid grasp of <strong style="color: #ffffff; font-weight: bold;">Frontend devlopment</strong>, <strong style="color: #ffffff; font-weight: bold;">SQL databases</strong>, <strong style="color: #ffffff; font-weight: bold;">Python</strong>, <strong style="color: #ffffff; font-weight: bold;">React.js</strong>, <strong style="color: rgb(255, 255, 255); font-weight: bold;">Designing</strong>, <strong style="color: rgb(255, 255, 255); font-weight: bold;">Figma</strong>, <strong style="color: rgb(255, 255, 255); font-weight: bold;">Adobe Xd</strong>, and more. I have a strong technical foundation in software development and I’m enthusiastic about creating <strong style="color: rgb(255, 255, 255); font-weight: bold;">scalable</strong> and <strong style="color: rgb(255, 255, 255); font-weight: bold;">reliable</strong> applications.</p>
+
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span style="font-weight: bold;">Languages</span> : Javascript, Typescript, HTML, CSS, Python</li>
+                                <li><span style="font-weight: bold;">Frameworks</span> :React js</li>
+                                <li><span style="font-weight: bold;">Libraries</span> :React.js, Redux, React Router</li>
+                                <li><span style="font-weight: bold;">Databases</span> :SQL</li>
+                                <li><span style="font-weight: bold;">Version Control </span> :Git ,GitHub</li>
+                                <li><span style="font-weight: bold;">API Testing</span> :Postman </li>
+                                <li><span style="font-weight: bold;">Designing</span> :Figma, Adobe Xd</li>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span style="font-weight: bold;">frontend Devoloper Trainee (Dec 2022- Nov 2023) </span><br>
+                                    <span style="font-style: italic; font-size: 12px;">Decision Minds</span>
+                                    <br></li>
+                                    <strong style="color: #ffffff; font-weight: bold;">UI Development</strong>.
+                                    <li style="font-size: 15px; list-style-type: disc;">Design and implement dynamic responsive user interfaces using React js</li>
+                                    <strong style="color: #ffffff; font-weight: bold;">API Integration</strong>. 
+                                    <li style="font-size: 15px; list-style-type: disc;">Integrate APIs to fetch and display data in the user interface using Redux , React Query</li>
+                                    <strong style="color: #ffffff; font-weight: bold;">Ant Design Framework</strong>
+                                    <li style="font-size: 15px; list-style-type: disc;">Proficient in Ant Design framework uisng React js</li>
+                                    <strong style="color: #ffffff; font-weight: bold;">Bug Fixing</strong>
+                                    <li style="font-size: 15px; list-style-type: disc;">Proficient in Ant Design framework uisng React js</li>
+                                    <strong style="color: #ffffff; font-weight: bold;">Package Tools</strong>
+                                    <li style="font-size: 15px; list-style-type: disc;">Experience with modern front-end development tools and workflows (npm/yarn)</li>
+                            </ul>
+                            <ul>
+                                <li><span style="font-weight: bold;">Junior frontend Devoloper(Dec 2023 - Present) </span><br>
+                                    <span style="font-style: italic; font-size: 12px;">Sysarks technology solutions Pvt Ltd</span>
+                                    <br></li>
+                                    <strong style="color: #ffffff; font-weight: bold;">UI Development</strong>.
+                                    <li style="font-size: 15px; list-style-type: disc;">Design and implement dynamic responsive user interfaces using React js</li>
+                                    <strong style="color: #ffffff; font-weight: bold;">API Integration</strong>. 
+                                    <li style="font-size: 15px; list-style-type: disc;">Integrate APIs to fetch and display data in the user interface using Redux</li>
+                                    <strong style="color: #ffffff; font-weight: bold;">Ant Design Framework</strong>
+                                    <li style="font-size: 15px; list-style-type: disc;">Proficient in Ant Design framework uisng React js</li>
+                                    <strong style="color: #ffffff; font-weight: bold;">UI & UX Design</strong>
+                                    <li style="font-size: 15px; list-style-type: disc;"> Created and iterated on website design and Andriod desgin using Adobe XD, ensuring alignment with project goals and user needs.</li>
+                                    <strong style="color: #ffffff; font-weight: bold;">Package Tools</strong>
+                                    <li style="font-size: 15px; list-style-type: disc;">Experience with modern front-end development tools and workflows (npm/yarn)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span style="font-weight: bold;">Bachelor of Electrical & Electronic Engineering (Jun 2016 – Nov 2020) </span><br>
+                                <span style="font-style: italic; font-size: 12px;">Anna University </span>
+                                <br></li>
+                                <li style="font-size: 14px;">Annapoorana Engineering College</li>
+                                
+                               
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <img src="images/icons8-html-96.png" alt="">
+                    <h2>HTML</h2>
+                </div>
+                <div>
+                    <img src="images/icons8-css-100.png" alt="">
+                    <h2>CSS</h2>
+                </div>
+                <div>
+                    <img src="images/icons8-javascript-100.png" alt="">
+                    <h2>Javascript</h2>
+                </div>
+                <div>
+                    <img src="images/icons8-typescript-100.png" alt="">
+                    <h2>Typescript</h2>
+                </div>
+                <div>
+                    <img src="images/icons8-mongodb-a-cross-platform-document-oriented-database-program-96.png" alt="">
+                    <h2>MongoDB</h2>
+                </div>
+                <div>
+                    <img src="images/icons8-python-100.png" alt="">
+                    <h2>Python</h2>
+                </div>
+                <div>
+                    <img src="images/icons8-react-native-100.png" alt="">
+                    <h2>React</h2>
+                </div>
+                
+                <div>
+                    <img src="images/icons8-figma-100.png" alt="">
+                    <h2>Figma</h2>
+                </div>
+                <div>
+                    <img src="images/icons8-adobe-xd-100.png" alt="">
+                    <h2>Adobe Xd</h2>
+                </div>
+                <div>
+                    <img src="images/icons8-postgresql-100.png" alt="">
+                    <h2>PostgreSQL</h2>
+                </div>
+                
+                <div>
+                    <img src="images/icons8-redux-100.png" alt="">
+                    <h2>Redux</h2>
+                </div>
+                
+                <div>
+                    <img src="images/icons8-git-100.png" alt="">
+                    <h2>Git</h2>
+                </div>
+                <div>
+                    <img src="images/icons8-github-100.png" alt="">
+                    <h2>GitHub</h2>
+                </div>
+                <!-- Add more divs as needed -->
+            </div>
+        </div>
+    </div>
+    <div id="project" style="margin-top: 100px;">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Susecess4.png" alt="">
+                    <div class="layer">
+                        <h3>Juco Berry E-commerce website</h3>
+                        <p>This project involved creating a tailored food ordering website for a specific restaurant, guaranteeing a seamless and
+                            enjoyable dining experience for users.</p>
+                        <a href="https://github.com/jubairskv/SUCESS4-Project-Decision-Minds"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/datahub.png" alt="">
+                    <div class="layer">
+                        <h3>Microservice mini-blog website</h3>
+                        <p>This project is a microservice-based mini blog system designed to allow users to create posts and add comments to existing posts. The application is composed of six individual services, each running on separate ports.</p>
+                        <a href="https://github.com/jubairskv/DATA-HUB-PROJECT-Decision-Minds"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <!-- <div class="work">
+                    <img src="images/movie.png" alt="">
+                    <div class="layer">
+                        <h3>Microservice mini-blog website</h3>
+                        <p>This project is a microservice-based mini blog system designed to allow users to create posts and add comments to existing posts. The application is composed of six individual services, each running on separate ports.</p>
+                        <a href="https://github.com/unaizk/microservice-mini-project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+                <div class="work">  
+                    <img src="images/Mannaheal.png" alt="">
+                    <div class="layer">
+                        <h3>Microservice mini-blog website</h3>
+                        <p>This project is a microservice-based mini blog system designed to allow users to create posts and add comments to existing posts. The application is composed of six individual services, each running on separate ports.</p>
+                        <a href="https://github.com/unaizk/microservice-mini-project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> 
+                
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+   
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>jubairskv@gmail.com </p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 6381650661</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jubair-k-1b209a247/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jubairskv"><i class="fa-brands fa-github"></i></a>
+                        <!-- <a href="https://hub.docker.com/u/unaizk"><i class="fa-brands fa-docker"></i></a> -->
+                        
+                    </div>
+                    <a href="images/Jubair K.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="submit-form" name="submit-form">
+                        <input type="text" name="Name" placeholder="Your name" id="uname" onkeyup="validateName()">
+                        <span id="name-error"></span>
+                        <input type="email" name="Email" placeholder="Your Email" id="mail" onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                        <textarea name="Message"  rows="6" placeholder="Your Message" id="message" onkeyup="validateMessage()"> </textarea>
+                        <span id="message.Error"></span>
+                        <button type="submit" onclick="return validateForm()" class="btn btn2">Submit</button>
+                        
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Jubair. Made by Jubair</p>
+        </div>
+
+    </div>
+
+   <script src="index.js"></script> 
+    
+</body>
+</html>
