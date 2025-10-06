@@ -163,6 +163,85 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+/* Experience Section Styles */
+.experience-item {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-left: 4px solid #ff004f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 0, 79, 0.2);
+}
+
+.experience-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.experience-header h3 {
+    color: #ff004f;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.experience-header .company {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.experience-header .duration {
+    color: #ababab;
+    font-size: 14px;
+    font-style: italic;
+    background: #333;
+    padding: 4px 12px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.experience-details {
+    display: grid;
+    gap: 20px;
+}
+
+.responsibility {
+    background: #262626;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid #ff004f;
+    transition: background 0.3s ease;
+}
+
+.responsibility:hover {
+    background: #2a2a2a;
+}
+
+.responsibility h4 {
+    color: #ff004f;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.responsibility p {
+    color: #e0e0e0;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
 #services{
     padding: 30px 0;
 }
@@ -411,6 +490,32 @@ nav .fas{
     .copyright{
         font-size: 14px;
 
+    }
+    
+    /* Experience Section Mobile Styles */
+    .experience-item {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .experience-header h3 {
+        font-size: 20px;
+    }
+    
+    .experience-header .company {
+        font-size: 16px;
+    }
+    
+    .responsibility {
+        padding: 15px;
+    }
+    
+    .responsibility h4 {
+        font-size: 14px;
+    }
+    
+    .responsibility p {
+        font-size: 14px;
     }
 }
 .contact-right span{
