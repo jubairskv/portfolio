@@ -154,3 +154,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+// Preloader logic
+(function(){
+    var preloader = document.getElementById('preloader');
+    var bar = document.getElementById('preloader-bar');
+    var text = document.getElementById('preloader-text');
+    if(!preloader || !bar || !text) return;
+
+    var progress = 0;
+    var tick = setInterval(function(){
+        // accelerate slowly, cap at 95% until load
+        var increment = Math.max(1, 5 - Math.floor(progress/25));
+        progress = Math.min(progress + increment, 95);
+        bar.style.width = progress + '%';
+        text.textContent = progress + '%';
+    }, 120);
+
+    function finish(){
+        clearInterval(tick);
+        progress = 100;
+        bar.style.width = '100%';
+        text.textContent = '100%';
+        setTimeout(function(){
+            preloader.classList.add('hidden');
+        }, 150);
+        setTimeout(function(){
+            if(preloader && preloader.parentNode){
+                preloader.parentNode.removeChild(preloader);
+            }
+        }, 800);
+    }
+
+    if(document.readyState === 'complete'){
+        finish();
+    } else {
+        window.addEventListener('load', finish);
+        // soft push if load is slow
+        setTimeout(function(){
+            if(progress < 95){
+                progress = 95;
+                bar.style.width = '95%';
+                text.textContent = '95%';
+            }
+        }, 5000);
+        // hard cap fallback
+        setTimeout(function(){
+            if(preloader){ finish(); }
+        }, 15000);
+    }
+})();
